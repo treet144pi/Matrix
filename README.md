@@ -22,13 +22,13 @@ cmake --build build -j
 ### Функциональный запуск
 
 ```bash
-./build/funcdet < tests/e2e/in/test1.txt
+./build/funcdet
 ```
 
 ### Производительный запуск (бенчмарк)
 
 ```bash
-./build/benchdet < tests/e2e/in/test1.txt
+./build/benchdet
 ```
 
 ---
