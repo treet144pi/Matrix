@@ -7,7 +7,10 @@
 - Python (для генерации тестов `gen_tests.py`)
 
 ---
-
+##  Клонирование проекта
+```
+git clone https://github.com/treet144pi/Matrix.git
+```
 ##  Сборка проекта
 
 ```bash
