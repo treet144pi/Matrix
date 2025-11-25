@@ -19,12 +19,10 @@ target_link_libraries(matrix INTERFACE vector)
 add_executable(funcdet src/funcdet.cpp src/runner.cpp)
 target_link_libraries(funcdet PRIVATE matrix)
 target_include_directories(funcdet PRIVATE ${CMAKE_SOURCE_DIR}/include)
-target_compile_options(funcdet PRIVATE $<$<CONFIG:Release>:-O2 -DNDEBUG>)
 
 add_executable(benchdet src/benchdet.cpp src/runner.cpp)
 target_link_libraries(benchdet PRIVATE matrix)
 target_include_directories(benchdet PRIVATE ${CMAKE_SOURCE_DIR}/include)
-target_compile_options(benchdet PRIVATE $<$<CONFIG:Release>:-O2 -DNDEBUG>)
 
 include(CTest)
 if (BUILD_TESTING)

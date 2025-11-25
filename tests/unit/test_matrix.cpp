@@ -275,9 +275,9 @@ TEST(MatrixTest, DetBarThrowsOnNonSquare)
 
 TEST(MatrixTest, DetBarOverflowThrows)
 {
-    Matrix<int> m(2, 2);
-    m[0][0] = 50000; m[0][1] = 0;
-    m[1][0] = 0;     m[1][1] = 50000;
+    Matrix<long long> m(2, 2);
+    m[0][0] = 500000000000000; m[0][1] = 0;
+    m[1][0] = 0;               m[1][1] = 50000000000000;
 
     EXPECT_THROW(det_bar(m), std::overflow_error);
 }

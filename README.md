@@ -40,23 +40,15 @@ cmake --build build -j
 
 ### Unit тесты
 
-Собираются и запускаются с использованием CTest:
-
 ```bash
-cd build && ctest --output-on-failure
-```
-
-Или вручную:
-
-```bash
-./build/unit_tests_matrix
-./build/unit_tests_vector
+./build/tests/unit_tests_matrix
+./build/tests/unit_tests_vector
 ```
 
 ### E2E тесты
 
 ```bash
-./build/e2e
+./build/tests/e2e
 ```
 
 ---
